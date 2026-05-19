@@ -1,0 +1,7 @@
+interface:
+  display_name: "Resume Coach"
+  short_description: "Review, tailor, and rewrite your resume for ATS and specific JDs."
+  default_prompt: "Use $resume-coach to start the resume intake flow."
+
+policy:
+  allow_implicit_invocation: true
