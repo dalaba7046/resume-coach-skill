@@ -98,6 +98,66 @@ Infer the user's positioning from `references/user-context.md`. Common archetype
 
 If the user's context file specifies a primary archetype, lead with that. If no context is available, ask the user during the init intake flow.
 
+## User Configuration
+
+Fill in the three questions below once before first use. Write in plain language — no special format required.
+
+**Q1. What industry or type of company are you targeting?**
+Write one line. Examples: banking, healthcare, e-commerce, cloud technology, logistics, gaming.
+
+My target: [fill in]
+
+---
+
+**Q2. Are there any job-specific terms that should stay in English when I write your resume in Chinese?**
+Common tech names like Python, Docker, and AWS are already kept in English automatically.
+Add any specialist terms from your field that recruiters would expect to see in English — if you're not sure, leave this blank.
+
+Terms to keep in English:
+- [add term, or leave blank]
+
+---
+
+**Q3. Are there any parts of your background you want me to downplay?**
+For example: "I have research experience, but I'm mainly applying for engineering roles, so don't lead with the research."
+Leave blank if everything is fair game.
+
+Downplay:
+- [add note, or leave blank]
+
+---
+
+**Not sure what to write? Here are three filled-in examples:**
+
+_Example A — someone targeting banking / financial software_
+```
+My target: Banking and financial software
+
+Terms to keep in English: T24, SWIFT, Fedwire, ISO 20022, Playwright, Selenium
+
+Downplay: academic NLP research (only mention if the job asks for it)
+```
+
+_Example B — someone targeting AI / machine learning roles_
+```
+My target: AI and machine learning platforms
+
+Terms to keep in English: Hugging Face, BERT, LoRA, LangChain, vLLM
+
+Downplay: (nothing — show everything)
+```
+
+_Example C — someone targeting data and analytics roles_
+```
+My target: Data platforms and business analytics
+
+Terms to keep in English: Snowflake, dbt, Airflow, Kafka, Spark, BigQuery
+
+Downplay: frontend development experience
+```
+
+---
+
 ## Hard Rules
 
 - RenderCV YAML is the primary structured output when files are requested.
@@ -105,8 +165,8 @@ If the user's context file specifies a primary archetype, lead with that. If no 
 - Do not generate PDF unless the user asks for it.
 - Do not keyword-stuff. Put important keywords inside real experience or project bullets.
 - Keep resumes ATS-friendly: real text, conventional section names, no decorative skill bars, no photo for English resumes, no complex layout.
-- For Traditional Chinese, use zh-Hant and Taiwan usage. Keep technical terms such as Python, Playwright, Selenium, MSAL, EWS, T24, ISO 20022, Fedwire, pacs.008, pacs.009, Hugging Face, BERT, BIO tagging, and Label Studio in English.
-- Do not over-emphasize NLP in RPA, banking automation, or FinTech versions.
+- For Traditional Chinese, use zh-Hant and Taiwan usage. Keep all terms listed under **User Configuration → Technical Terms to Keep in English** in English; common technical nouns stay in English by default.
+- Do not over-emphasize any experience area listed under **User Configuration → Experience Areas to De-emphasize** unless the JD explicitly requires it.
 
 ## Modes
 
