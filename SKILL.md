@@ -16,14 +16,14 @@ This skill helps maintain and improve a resume system. It is not a generic rewri
 This skill works across Claude Code and Codex. All of the following forms are valid entry points — slash commands and `@` mentions are optional aliases, not requirements.
 
 **Explicit init / intake:**
-- `$resume-coach init`
+- `/resume-coach init` (Claude Code) / `$resume-coach init` (Codex)
 - `Use the resume-coach skill to start the resume intake flow`
 - `start resume intake`
 
 **Direct task invocation (skips intake if task is clear):**
-- `$resume-coach review` / `Use resume-coach to review my resume`
-- `$resume-coach tailor` / `Use resume-coach to tailor my resume for this JD`
-- `$resume-coach rewrite` / `Use resume-coach to rewrite this bullet`
+- `/resume-coach review` (Claude Code) / `$resume-coach review` (Codex) / `Use resume-coach to review my resume`
+- `/resume-coach tailor` (Claude Code) / `$resume-coach tailor` (Codex) / `Use resume-coach to tailor my resume for this JD`
+- `/resume-coach rewrite` (Claude Code) / `$resume-coach rewrite` (Codex) / `Use resume-coach to rewrite this bullet`
 - `review my resume` / `tailor my resume for this JD` / `help me build a resume version`
 
 **Inferred direction from uploaded material:**
@@ -33,7 +33,7 @@ This skill works across Claude Code and Codex. All of the following forms are va
 ## Init / First-Use Flow
 
 **When to run init:** Run the intake flow whenever:
-- The user invokes the skill with no JD, no resume file, and no concrete task (e.g., just `$resume-coach init` or `start resume intake`).
+- The user invokes the skill with no JD, no resume file, and no concrete task (e.g., just `/resume-coach init`, `$resume-coach init`, or `start resume intake`).
 - The user's intent is ambiguous and guessing the mode would waste a full response.
 
 **When NOT to run init:** Skip intake and proceed directly to the task when:
